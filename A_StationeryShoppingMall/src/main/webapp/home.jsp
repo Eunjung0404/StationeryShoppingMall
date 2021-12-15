@@ -19,10 +19,42 @@
             <li>
                 <h4 class="middleTitle">Quality Over Quantity</h4>
                 <p>
-                    
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci odio asperiores pariatur qui ratione voluptatibus maxime, accusamus sunt quibusdam tenetur obcaecati nam dolore unde ad. Est nulla dignissimos voluptatum vel.
                 </p>
-                <span><img src="" alt=""></span>
+                <span><img src="<%=request.getContextPath()%>/images/main/why01.jpg" alt="master"></span>
             </li>
+            <li>
+                <h4 class="middleTitle">Long-Term Review</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci odio asperiores pariatur qui ratione voluptatibus maxime, accusamus sunt quibusdam tenetur obcaecati nam dolore unde ad. Est nulla dignissimos voluptatum vel.
+                </p>
+                <span><img src="<%=request.getContextPath()%>/images/main/why02.jpg" alt="analysis"></span>
+            </li>
+            <li>
+                <h4 class="middleTitle">Award Winning Team</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci odio asperiores pariatur qui ratione voluptatibus maxime, accusamus sunt quibusdam tenetur obcaecati nam dolore unde ad. Est nulla dignissimos voluptatum vel.
+                </p>
+                <span><img src="<%=request.getContextPath()%>/images/main/why03.jpg" alt="award"></span>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="prd">
+    <div class="titleWrap">
+        <small>Selective Goods</small>
+        <h2 class="title">한발 앞서 2022년을 준비하는 당신에게.</h2>
+        <p class="subtitle">
+            Cha&Na가 3개월 이상 직접 사용해 보며,<br>
+            내구성, 디자인, 편의성을 고려한 다양한 다이어리와 캘린더를 만나보세요.
+        </p>
+    </div>
+    <div class="contents">
+        <ul class="diary">
+            <li><a href=""></a></li>
+        </ul>
+        <ul class="calender">
+            <li></li>
         </ul>
     </div>
 </section>

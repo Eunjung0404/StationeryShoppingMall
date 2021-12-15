@@ -15,7 +15,7 @@
 	<meta name="author" content="Cha Eun Jung, Na Seul Gee">
 	<meta name="generator" content="VS Code, eclipse">
 
-	<link rel="shorcut icon" type="image/x-icon" href="<%=request.getContextPath()%>/images/favicon.ico">
+	<link rel="shorcut icon" type="image/x-icon" href="<%=request.getContextPath()%>/images/common/favicon.ico">
 	<!-- e: seo -->
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!-- 구글 텍스트 아이콘 -->

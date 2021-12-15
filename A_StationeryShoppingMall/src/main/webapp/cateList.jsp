@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<section class="">
+<section class="prdListWrap">
     <ul>
         <li class="item" data-prdNum="상품번호값 넘겨줘">
             <div class="thumb"><img src="<%=request.getContextPath()%>/images/sample/prdThumb.jpg" alt="썸네일"></div>

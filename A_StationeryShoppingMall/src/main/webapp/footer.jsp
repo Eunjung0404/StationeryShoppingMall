@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <div class="logoWrap imgWrap">
-    <img class="logo" src="<%=request.getContextPath()%>/images/logo_footer.png" alt="logo">
+    <img class="logo" src="<%=request.getContextPath()%>/images/common/logo_footer.png" alt="logo">
 </div>
 <div class="footerGnbWrap"><jsp:include page="${requestScope.menu }" /></div>
 <section class="csCenter">
