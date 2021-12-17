@@ -3,7 +3,7 @@
 <nav id="gnb">
 	<ul class="depth01">
 		<li>
-			<a href="<%=request.getContextPath()%>/Home?spage=cateList.jsp" data-param="100">만년 다이어리</a>
+			<a href="<%=request.getContextPath()%>/Home?spage=cateList.jsp" data-param="100">다이어리</a>
 			<ul class="depth02">
 				<li><a href="<%=request.getContextPath()%>/Home?spage=cateList.jsp" data-param="100">전체보기</a></li>
 				<li><a href="<%=request.getContextPath()%>/Home?spage=cateList.jsp" data-param="101">심플</a></li>
