@@ -5,7 +5,7 @@
 		<button class="mobileShow material-icons" onclick="_showGnb()">menu</button>
 
 		<h1 class="logoWrap imgWrap">
-			<a href="/">
+			<a href="<%=request.getContextPath()%>/Home?spage=home.jsp">
 				<img class="logo" src="<%=request.getContextPath()%>/images/common/logo.png" alt="logo">
 				<span>Cha&Na</span>
 			</a>

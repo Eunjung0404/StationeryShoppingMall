@@ -2,7 +2,7 @@
 
 <section class="footerWrap">
     <div class="logoWrap imgWrap">
-        <a href="/">
+        <a href="<%=request.getContextPath()%>/Home?spage=home.jsp">
             <img class="logo" src="<%=request.getContextPath()%>/images/common/logo_footer.png" alt="logo">
             <span>Cha&Na</span>
         </a>
