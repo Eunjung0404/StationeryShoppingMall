@@ -1,12 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<div class="footerWrap">
+<section class="footerWrap">
     <div class="logoWrap imgWrap">
-        <img class="logo" src="<%=request.getContextPath()%>/images/common/logo_footer.png" alt="logo">
-        <span>Cha&Na</span>
+        <a href="/">
+            <img class="logo" src="<%=request.getContextPath()%>/images/common/logo_footer.png" alt="logo">
+            <span>Cha&Na</span>
+        </a>
     </div>
-    <div class="footerGnbWrap"><jsp:include page="${requestScope.menu }" /></div>
-    <section class="csCenter">
+    <div class="footerGnbWrap"><include data-href="../include/gnb.html"></div>
+    <div class="csCenter">
         <ul>
             <li class="company">(주)Cha&Na</a></li>
             <li class="call">
@@ -26,5 +28,5 @@
             </li>
         </ul>
         <p class="copyright">Copyright 2021. 차은정 and 나슬기 all rights reserved.</p>
-    </section>
-</div>
+    </div>
+</section>

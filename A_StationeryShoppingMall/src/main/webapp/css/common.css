@@ -4,9 +4,9 @@
 /* 공통 */
 body { font-family: "Pretendard", "Nanum Gothic", "arial", "맑은 고딕", sans-serif; font-weight: 300; }
 
-.displaynone { display: none !important; }
+.mobileShow, .displaynone { display: none !important; }
 
-.material-icons { display: block; }
+.material-icons { display: block; padding: 5px; }
 
 .imgWrap img { width: 100%; }
 
@@ -42,7 +42,7 @@ body { font-family: "Pretendard", "Nanum Gothic", "arial", "맑은 고딕", sans
 
 #header .headerWrap .leftWrap #gnb .depth01 > li { position: relative; top: 0; left: 0; }
 
-#header .headerWrap .leftWrap #gnb .depth01 > li:hover .depth02 { display: block; box-shadow: 0 10px 15px #00000050; -webkit-box-shadow: 0 10px 15px #00000050; }
+#header .headerWrap .leftWrap #gnb .depth01 > li:hover .depth02, #header .headerWrap .leftWrap #gnb .depth01 > li:focus-within .depth02 { display: block; box-shadow: 0 10px 15px #00000050; -webkit-box-shadow: 0 10px 15px #00000050; }
 
 #header .headerWrap .leftWrap #gnb .depth01 > li::after { content: "|"; color: #ebebeb; }
 
@@ -56,9 +56,7 @@ body { font-family: "Pretendard", "Nanum Gothic", "arial", "맑은 고딕", sans
 
 #header .headerWrap .leftWrap #gnb .depth01 > li .depth02 a:hover { background-color: #f1f1f1; }
 
-#header .headerWrap .rightWrap .material-icons { padding: 5px; }
-
-#header .headerWrap .rightWrap .searchWrap .grayWrap { width: 0; padding: 10px 0; box-sizing: border-box; overflow: hidden; background-color: #ebebeb; transition: 1s; }
+#header .headerWrap .rightWrap .searchWrap .grayWrap { width: 0; padding: 10px 0; box-sizing: border-box; overflow: hidden; background-color: #ebebeb; transition: 0.5s; }
 
 #header .headerWrap .rightWrap .searchWrap .grayWrap .searchBar { width: 100%; padding: 5px; border-bottom: 1px solid; box-sizing: border-box; }
 
@@ -101,4 +99,19 @@ body { font-family: "Pretendard", "Nanum Gothic", "arial", "맑은 고딕", sans
   #header.searchOn .headerWrap .leftWrap #gnb { display: none; }
   #header.searchOn .headerWrap .rightWrap .searchWrap .grayWrap { width: calc(100vw - 350px); } }
 
-@media (max-width: 768px) { html { background-color: chocolate; } }
+@media (max-width: 768px) { html { min-width: 360px; background-color: chocolate; }
+  .mobileShow { display: block !important; }
+  #header .headerWrap .leftWrap .logoWrap { margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  #header .headerWrap .leftWrap #gnb { position: absolute; top: 0; left: -100%; transition: 0.5s; z-index: 1; }
+  #header .headerWrap .leftWrap #gnb.showGnb { left: 0; }
+  #header .headerWrap .leftWrap #gnb.showGnb .blackBlock { display: block; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; background-color: #00000080; z-index: -1; }
+  #header .headerWrap .leftWrap #gnb.showGnb .blackBlock .close { position: absolute; bottom: 0; right: 0; color: #fff; }
+  #header .headerWrap .leftWrap #gnb .depth01 { flex-direction: column; width: 70vw; height: 100vh; background-color: #fff; }
+  #header .headerWrap .leftWrap #gnb .depth01 > li:hover .depth02 { display: none; box-shadow: none; -webkit-box-shadow: none; }
+  #header .headerWrap .leftWrap #gnb .depth01 > li:last-child::after, #header .headerWrap .leftWrap #gnb .depth01 > li::after { display: block; content: ""; width: 10px; height: 10px; border: 1px solid #1a1a1a; border-top: none; border-left: none; position: absolute; top: 20px; right: 20px; transform: rotate(45deg); transition: 0.5s; }
+  #header .headerWrap .leftWrap #gnb .depth01 > li strong { width: 100%; padding: 20px; border-bottom: 1px solid #ebebeb; box-sizing: border-box; }
+  #header .headerWrap .leftWrap #gnb .depth01 > li .depth02 { width: 100%; border: none; position: relative; top: 0; left: 0; transform: none; background-color: #f1f1f1; }
+  #header .headerWrap .leftWrap #gnb .depth01 > li.showDepth02 { border-bottom: 1px solid #ebebeb; }
+  #header .headerWrap .leftWrap #gnb .depth01 > li.showDepth02::after { transform: rotate(225deg); }
+  #header .headerWrap .rightWrap .searchWrap .grayWrap { width: 100%; height: 0; padding: 0; position: absolute; top: 77px; left: 0; }
+  #header.searchOn .headerWrap .rightWrap .searchWrap .grayWrap { width: 100%; height: 70px; padding: 20px; } }
