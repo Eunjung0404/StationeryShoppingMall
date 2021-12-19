@@ -45,10 +45,46 @@ function _searchIconClick() {
     });
 }
 
+/* input 값 실시간 감지 후 value 세팅 */
+function _setValue() {
+    let _oldVal;
+    $("input").on("propertychange change keyup paste input", function() {
+        let _currentVal = $(this).val();
+        if(_currentVal == _oldVal) {
+            return;
+        }
+
+        _oldVal = _currentVal;
+        return $(this).attr("value",_currentVal);
+    });
+}
+
+/* 배너 */
+function _slideBanner() {
+    let _bannerWrap = document.querySelector(".slideBanner");
+    if (_bannerWrap == null) {
+        return false;
+    }
+
+    let _banner = _bannerWrap.querySelectorAll("li");
+    let _selectBanner = _bannerWrap.querySelector("li.select");
+    let _browserWidth = document.body.offsetWidth;
+    _bannerWrap.style.width = _browserWidth*_banner.length+"px";
+
+    // select 기준으로 양 옆에 형제요소가 없을 때
+        // 마지막 li를 select 왼쪽에 추가
+        // 첫번째 li를 select 오른쪽에 추가
+    // _bannerWrap.appendChild = _banner[_banner.length-1];
+    // _selectBanner.classList.remove("select");
+    // _selectBanner.nextElementSibling.classList.add("select");
+    // _selectBanner = _bannerWrap.querySelector("li.select");
+}
+
 /* 문서 로드 완료 시 실행 함수 */
 document.addEventListener("DOMContentLoaded", function(){
     _searchIconClick();
     _actualResizeHandler();
+    _setValue();
 });
 
 /* 브라우저 크기 변경 시 재실행 함수 */
@@ -69,4 +105,6 @@ function _actualResizeHandler() {
     if (_device == "MO") {
         _clickNav(_dropNav);
     }
+
+    _slideBanner();
 }

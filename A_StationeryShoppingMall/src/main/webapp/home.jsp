@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<section class="mainBanner">
+<section class="slideBanner">
     <ul>
-        <li><img src="<%=request.getContextPath()%>/images/sample/banner.jpg" alt="배너이미지"></li><!--img값 넘겨줘-->
+        <li class="select"><a href=""><img src="<%=request.getContextPath()%>/images/sample/banner01.jpg" alt="배너이미지"></a></li><!--링크, img, alt값 넘겨줘-->
+        <li><a href=""><img src="<%=request.getContextPath()%>/images/sample/banner02.jpg" alt="배너이미지"></a></li><!--링크, img, alt값 넘겨줘-->
     </ul>
 </section>
 <section class="intro">

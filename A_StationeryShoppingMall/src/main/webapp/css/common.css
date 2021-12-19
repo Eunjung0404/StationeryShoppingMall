@@ -93,12 +93,22 @@ body { font-family: "Pretendard", "Nanum Gothic", "arial", "맑은 고딕", sans
 
 #footer .footerWrap .csCenter .copyright { margin: 20px 0; }
 
+/* main */
 #container { margin-top: 77px; }
 
+/* 배너 */
+.slideBanner { width: 100%; overflow: hidden; }
+
+.slideBanner ul { display: flex; }
+
+.slideBanner ul li a, .slideBanner ul li img { display: block; width: 100%; }
+
+/* 탭 */
 @media (max-width: 1024px) and (min-width: 768px) { html { background-color: chartreuse; }
   #header.searchOn .headerWrap .leftWrap #gnb { display: none; }
   #header.searchOn .headerWrap .rightWrap .searchWrap .grayWrap { width: calc(100vw - 350px); } }
 
+/* 모바일 */
 @media (max-width: 768px) { html { min-width: 360px; background-color: chocolate; }
   .mobileShow { display: block !important; }
   #header .headerWrap .leftWrap .logoWrap { margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
