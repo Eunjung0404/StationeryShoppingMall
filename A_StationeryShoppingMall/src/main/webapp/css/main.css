@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* main.css */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+.mainWrap { /* 공통 */ }
+
+.mainWrap .titleWrap { margin: 100px auto; }
+
+.mainWrap .titleWrap .smallTitle { display: inline-block; margin-bottom: 35px; font-size: 1.2rem; font-weight: 600; }
+
+.mainWrap .titleWrap .smallTitle::before { display: inline-block; content: "— – ·"; margin-right: 10px; }
+
+.mainWrap .titleWrap .title { font-family: "Noto Serif KR", serif; font-size: 2rem; }
+
+.mainWrap .titleWrap .subtitle { margin-top: 35px; font-size: 1.2rem; }
+
+.mainWrap .titleWrap .intro .contents li { width: 33%; }
+
+@media (max-width: 1024px) and (min-width: 768px) { .mainWrap { /* 공통 */ }
+  .mainWrap .titleWrap { margin: 80px auto; } }
+
+@media (max-width: 768px) { .mainWrap { /* 공통 */ }
+  .mainWrap .titleWrap { margin: 10vw auto; }
+  .mainWrap .titleWrap .smallTitle { margin-bottom: 5vw; }
+  .mainWrap .titleWrap .subtitle { margin-bottom: 5vw; } }

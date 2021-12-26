@@ -24,13 +24,13 @@
 	<script type="text/javascript" src="<%=request.getContextPath()%>/js/script.js" defer></script>
 </head>
 <body>
-	<header id="header">
+	<header id="header" class="max1200">
 		<jsp:include page="${requestScope.header }" />
 	</header>
 	<main id="container">
 		<jsp:include page="${requestScope.main }" />
 	</main>
-	<footer id="footer">
+	<footer id="footer" class="max1200">
 		<jsp:include page="${requestScope.footer}" />
 	</footer>
 </body>
